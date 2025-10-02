@@ -1,0 +1,30 @@
+# save this as environment.yml
+name: dises
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  # Core data science
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - statsmodels
+  - seaborn
+  - matplotlib
+  # Geospatial stack
+  - gdal
+  - fiona
+  - shapely
+  - rasterio
+  - geopandas
+  - pyproj
+  - scikit-gstat
+  - pysal
+  - libpysal
+  - esda
+  - spreg
+  # Other utilities
+  - pip:
+      - PyPDF2

@@ -7,16 +7,16 @@ This project implements Small Area Estimation (SAE) for nutrition indicator in C
 - [0-DHS-NIS-complete-SAE.ipynb](0-DHS-NIS-complete-SAE.ipynb):  
   Loads and merges DHS and NIS data, attaches geometries, and exports cleaned shapefiles for further analysis.
 
-- [1. Covariates Selection-SAE.ipynb](1. Covariates Selection-SAE.ipynb):  
+- [1-Covariates-Selection-SAE.ipynb](1-Covariates-Selection-SAE.ipynb):  
   Prepares georeferenced DHS data, processes geospatial covariates, applies urban masking, merges datasets, handles missing values, explores the target variable, and performs Lasso-based covariate selection. Exports the final dataset for modeling.
 
-- [2. SAE-SEM.ipynb](2. SAE-SEM.ipynb):  
+- [2-SAE-SEM.ipynb](2-SAE-SEM.ipynb):  
   Loads the processed data, fits OLS and Spatial Error Models (SEM), performs spatial diagnostics (Moran's I), predicts the target variable at the village level, and runs Monte Carlo simulations for uncertainty estimation.
 
 - [functions.py](functions.py):  
   Contains utility functions for geospatial processing, raster manipulation, data transformation, missing value handling, plotting, and other helper routines used throughout the notebooks.
 
-- [SAE procedure.docx](SAE procedure.docx):  
+- [SAE-procedure.docx](SAE-procedure.docx):  
   Documentation of the SAE methodology and workflow.
 
 ## Data Folders
@@ -36,10 +36,10 @@ This project implements Small Area Estimation (SAE) for nutrition indicator in C
    - Run [0-DHS-NIS-complete-SAE.ipynb](0-DHS-NIS-complete-SAE.ipynb) to prepare and export cleaned NIS and DHS shapefiles.
 
 2. **Covariate Selection:**  
-   - Use [1. Covariates Selection-SAE.ipynb](1. Covariates Selection-SAE.ipynb) to process covariates, handle missing data, and select features with Lasso.
+   - Use [1-Covariates-Selection-SAE.ipynb](1-Covariates-Selection-SAE.ipynb) to process covariates, handle missing data, and select features with Lasso.
 
 3. **Modeling and Prediction:**  
-   - Run [2. SAE-SEM.ipynb](2. SAE-SEM.ipynb) to fit OLS/SEM models, perform diagnostics, and generate predictions with uncertainty intervals.
+   - Run [2-SAE-SEM.ipynb](2-SAE-SEM.ipynb) to fit OLS/SEM models, perform diagnostics, and generate predictions with uncertainty intervals.
 
 ## Requirements
 
@@ -59,4 +59,4 @@ pip install geopandas pandas numpy matplotlib seaborn scikit-learn scikit-gstat 
 
 - All file paths are set for Windows and may need adjustment for other environments.
 - Intermediate and output files are saved in the `data/`, `output/`, and `temp_files/` directories.
-- For details on the methodology, see [SAE procedure.docx](SAE procedure.docx).
+- For details on the methodology, see [SAE-procedure.docx](SAE-procedure.docx).
