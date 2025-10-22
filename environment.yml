@@ -13,6 +13,8 @@ dependencies:
   - statsmodels
   - seaborn
   - matplotlib
+  - contextily
+  - openpyxl
   # Geospatial stack
   - gdal
   - fiona
