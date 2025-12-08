@@ -4,13 +4,19 @@ This project implements Small Area Estimation (SAE) for nutrition indicator in C
 
 ## Main Files
 
-- [0-DHS-NIS-complete-SAE.ipynb](0-DHS-NIS-complete-SAE.ipynb):  
+- [1-NIS-preprocessing.ipynb](1-NIS-preprocessing.ipynb):  
+  Pre-processes NIS data for further analysis.
+
+- [2-MPI-NIS.ipynb](2-MPI-NIS.ipynb):  
+  Constructs MPI for NIS data for further analysis.
+
+- [3-DHS-NIS-complete-SAE.ipynb](0-DHS-NIS-complete-SAE.ipynb):  
   Loads and merges DHS and NIS data, attaches geometries, and exports cleaned shapefiles for further analysis.
 
-- [1-Covariates-Selection-SAE.ipynb](1-Covariates-Selection-SAE.ipynb):  
+- [4-Covariates-Selection-SAE.ipynb](1-Covariates-Selection-SAE.ipynb):  
   Prepares georeferenced DHS data, processes geospatial covariates, applies urban masking, merges datasets, handles missing values, explores the target variable, and performs Lasso-based covariate selection. Exports the final dataset for modeling.
 
-- [2-SAE-SEM.ipynb](2-SAE-SEM.ipynb):  
+- [5-SAE-SEM.ipynb](2-SAE-SEM.ipynb):  
   Loads the processed data, fits OLS and Spatial Error Models (SEM), performs spatial diagnostics (Moran's I), predicts the target variable at the village level, and runs Monte Carlo simulations for uncertainty estimation.
 
 - [functions.py](functions.py):  
@@ -32,14 +38,20 @@ This project implements Small Area Estimation (SAE) for nutrition indicator in C
 
 ## Workflow
 
-1. **Data Preparation:**  
-   - Run [0-DHS-NIS-complete-SAE.ipynb](0-DHS-NIS-complete-SAE.ipynb) to prepare and export cleaned NIS and DHS shapefiles.
+1. **NIS Data Preparation:**  
+   - Run [1-NIS-preprocessing.ipynb](1-NIS-preprocessing.ipynb) to prepare NIS data.
 
-2. **Covariate Selection:**  
-   - Use [1-Covariates-Selection-SAE.ipynb](1-Covariates-Selection-SAE.ipynb) to process covariates, handle missing data, and select features with Lasso.
+2. **NIS-based MPI Preparation:**  
+   - Run [2-MPI-NIS.ipynb](2-MPI-NIS.ipynb) to prepare NIS-based MPI data.
 
-3. **Modeling and Prediction:**  
-   - Run [2-SAE-SEM.ipynb](2-SAE-SEM.ipynb) to fit OLS/SEM models, perform diagnostics, and generate predictions with uncertainty intervals.
+3. **DHS and NIS Data Preparation:**  
+   - Run [3-DHS-NIS-complete-SAE.ipynb](3-DHS-NIS-complete-SAE.ipynb) to prepare and export cleaned NIS and DHS shapefiles.
+
+4. **Covariate Selection:**  
+   - Use [4-Covariates-Selection-SAE.ipynb](4-Covariates-Selection-SAE.ipynb) to process covariates, handle missing data, and select features with Lasso.
+
+5. **Modeling and Prediction:**  
+   - Run [5-SAE-SEM.ipynb](5-SAE-SEM.ipynb) to fit OLS/SEM models, perform diagnostics, and generate predictions with uncertainty intervals.
 
 ## Requirements
 

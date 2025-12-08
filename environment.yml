@@ -1,11 +1,11 @@
-# save this as environment.yml
 name: dises
 channels:
   - conda-forge
 dependencies:
-  - python=3.12
+  - python=3.11 
   - pip
-  # Core data science
+
+  # Core scientific stack
   - numpy
   - pandas
   - scipy
@@ -15,7 +15,10 @@ dependencies:
   - matplotlib
   - contextily
   - openpyxl
+
   # Geospatial stack
+  - proj 
+  - proj-data
   - gdal
   - fiona
   - shapely
@@ -27,6 +30,8 @@ dependencies:
   - libpysal
   - esda
   - spreg
-  # Other utilities
+
+  # Pip installs
   - pip:
       - PyPDF2
+
