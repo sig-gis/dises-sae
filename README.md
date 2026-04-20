@@ -55,6 +55,11 @@ Install dependencies with:
 pip install geopandas pandas numpy matplotlib seaborn scikit-learn scikit-gstat rasterio PyPDF2 fiona shapely pysal libpysal esda spreg
 ```
 
+Create new environment by using the environment.yml file:
+```sh
+conda env create --file environment.yml
+```
+
 ## Notes
 
 - All file paths are set for Windows and may need adjustment for other environments.
