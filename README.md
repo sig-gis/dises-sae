@@ -16,7 +16,7 @@ This project implements Small Area Estimation (SAE) for nutrition indicator in C
 - [functions.py](functions.py):  
   Contains utility functions for geospatial processing, raster manipulation, data transformation, missing value handling, plotting, and other helper routines used throughout the notebooks.
 
-- [SAE procedure.docx](SAE%procedure.docx):  
+- [SAE procedure.docx](SAE%procedure.docx) **file missing**:  
   Documentation of the SAE methodology and workflow.
 
 ## Data Folders
