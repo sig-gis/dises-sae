@@ -59,6 +59,13 @@ Create new environment by using the environment.yml file:
 ```sh
 conda env create --file environment.yml
 ```
+The new environment will be called "dises". Activate environment using:
+```sh
+conda activate dises
+```
+
+** Do not create the environment "dises" if it was already created for running scripts from the [DISES MPI repo](https://github.com/sig-gis/dises-khm-mpi/tree/adjusted).
+
 
 ## Notes
 
