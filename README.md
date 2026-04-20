@@ -73,5 +73,5 @@ conda activate dises
 ## Notes
 
 - All file paths are set for Windows and may need adjustment for other environments.
-- Intermediate and output files are saved in the `data/`, `output/`, and `temp_files/` directories.
-- For details on the methodology, see [SAE procedure.docx](SAE procedure.docx).
+- Intermediate and output files are saved in the `underlying/`, `output/`, and `temp_files/` directories.
+- For details on the methodology, see [SAE procedure.docx](SAE%procedure.docx).
